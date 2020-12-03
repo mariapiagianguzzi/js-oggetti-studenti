@@ -18,12 +18,14 @@ var studente = {
 
 // CON IL CICLO FOR-IN STAMPO TUTTE LE PROPRIETa CON UN ARRAY 
 
-for (var key in studente) {
+ for (var key in studente) {
     var studenteNome = studente[key].nome;
     var studenteCognome = studente[key].cognome;
     var studenteEta = studente[key].eta;
    
-}
+} 
+
+
 
 // CREO ARREY DI OGGETTI DI STUDENTI
 var studente = [
@@ -59,7 +61,7 @@ var studente = [
 ]
   
 
-
+//CON IL PROMPT CHIEDO ALL'UTENTE DI INSERIRE NOME COGNOME ETA
   var nomeStudente = prompt("Come ti chiami?"); 
   var cognomeStudente = prompt("Qual è il tuo cognome?");
   var studenteEta = prompt("Qual è la tua eta?");
@@ -71,6 +73,13 @@ var studente = [
   })
   console.log(studente); 
 
+
+
+  
+  for (var key in studente) {
+    document.getElementById("classe").innerHTML += key + ":" + studente[key] + "<br>";
+ }
+ 
 
   
 
